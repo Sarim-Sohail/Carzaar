@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header {
+  background: rgba(25, 25, 25, 0.95);
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+  font-family: "Corbel";
+}
+#header.fixed-top {
+  background: #191919;
+}
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#header .logo a {
+  color: #fff;
+}
+#header .logo img {
+  max-height: 40px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+body {
+    background-image: linear-gradient(135deg, #cc1616 10%, #1a1a1b 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Corbel", sans-serif;
+    color: #f0f0f0;
+  } 
+.card{
+	box-shadow: -1px 15px 30px -10px rgb(4, 4, 4);
+}
+.card-wr-bg:hover{
+	background-color: #f07a85;
+	cursor: pointer;
+	transition: all 1s ease;
+    transform: scale(1.04);
+}
+.card-s-bg:hover{
+	background-color: #f07a85;
+	cursor: pointer;
+	transition: all 1s ease;
+    transform: scale(1.04);
+}
+.card-d-bg:hover{
+	background-color: #f07a85;
+	cursor: pointer;
+	transition: all 1s ease;
+    transform: scale(1.04);
+}
+.card-footer{
+    font :#dbdbdb;
+	justify-content:space-around;
+	text-align: center;
+	display: flex;
+	padding: 0px!important;
+}
+.card-footer div{
+	flex-grow: 1 !important;
+	border-right: 1px solid #dbdbdb;
+	padding: 10px 0;
+}
+.card-footer div:last-child{
+border-right: none;	
+}
+
+button {
+    float:left;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 70px;
+    display: inline-block;
+    border-color: #080a07a6;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px #080a07a6;
+    background-image: linear-gradient(135deg, #3c3536 10%, #cc1616 100%);
+  }
+  .wrapper{
+    background-color: linear-gradient(135deg, #3c3536 10%, #cc1616 100%);
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar > ul > li {
+    margin-left: 5px;
+  }
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px 24px 15px;
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    background: #cc1616;
+  }

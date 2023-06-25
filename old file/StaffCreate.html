@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Staff Data Entry</title>
+</head>
+
+<body>
+<fieldset>
+<legend>Employee Data Form</legend>
+<form name="DataForm" method="post" action="StaffCreate.php">
+    <p>
+    <label for="FirstName">First Name</label>
+    <input type="text" name="txtfName" id="txtfName">
+<!--<div>
+<?php echo $errors['fname']?>
+</div> --> 
+    </p>
+    
+    <p>
+    <label for="LastName">Last Name</label>
+    <input type="text" name="txtlName" id="txtlName">
+    </p>
+
+<p>
+<label for="CNIC">CNIC</label>
+<input style="width:50px" type="number" name="txtCNIC" id="txtCNIC"> - <input style="width:110px" type="number" name="txtCNIC" id="txtCNIC">
+
+<p>
+    <label for="Password">Password</label>
+    <input type="text" name="txtPass" id="txtPass">
+</p>
+
+<!-- </p>
+<label for="HireDate">Date of Hire</label>
+<input type="text" name="txtPrice" id="txtPrice">
+</p> -->
+<p>
+<label for="">Designation</label>
+<input type="text" name="txtD" id="txtD">
+</p>
+<p>
+<label for="Salary">Salary</label>
+<input type="number" name="txtSal" id="txtSal">
+</p>
+<p>
+<label for="Commission">Commission</label>
+<input type="number" name="txtComm" id="txtComm">
+</p>
+<p>&nbsp;</p>
+<p>
+<input type="submit" name="Submit" id="Submit" value="Submit">
+</p>
+</form>
+</fieldset>
+</body>
+</html>
+

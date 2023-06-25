@@ -1,0 +1,153 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vehicle Data Entry</title>
+</head>
+
+<body>
+<fieldset>
+<legend>Vehicle Data Form</legend>
+<form name="DataForm" method="post" action="VehicleCreate.php">
+<p>
+<label for="Cost">Cost</label>
+<input type="text" name="txtCost" id="txtCost">
+<!-- changed by mubss -->
+<div style="color:red">
+<?php session_start();echo $send['Cost']?>
+</div> 
+<!-- --> 
+</p>
+<p>
+<label for="vType">vType</label>
+<input type="text" name="txtvType" id="txtvType">
+<!-- -->
+<div style="color:red">
+<?php echo $errors['vType']?>
+</div>
+<!-- -->
+
+<!-- -->
+</p>
+<p>
+<label for="Make">Make</label>
+<input type="text" name="txtMake" id="txtMake">
+<!-- -->
+<div style="color:red">
+<?php echo $errors['Make']?>
+</div>
+<!-- -->
+
+</p>
+<p>
+<label for="Color">Color</label>
+<input type="text" name="txtColor" id="txtColor">
+<!-- -->
+<div style="color:red">
+<?php echo $errors['Color']?>
+</div>
+<!-- -->
+
+</p>
+<p>
+<label for="Tax">Tax</label>
+<input type="text" name="txtTax" id="txtTax">
+</p>
+<!-- -->
+<div style="color:red">
+<?php echo $errors['Tax']?>
+</div>
+<!-- -->
+
+<!-- -->
+
+</p>
+<p>
+<label for="EngineCapacity">EngineCapacity</label>
+<input type="text" name="txtEngine_Capacity" id="txtEngine_Capacity">
+</p>
+<!-- -->
+<div style="color:red">
+<?php echo $errors['EngineCapacity']?>
+</div>
+<!-- -->
+
+<!-- -->
+
+</p>
+<p>
+<label for="FuelCapacity">FuelCapacity</label>
+<input type="text" name="txtFuel_Capacity" id="txtFuel_Capacity">
+</p>
+<!-- -->
+<div style="color:red">
+<?php echo $errors['FuelCapacity']?>
+</div>
+<!-- -->
+
+<!-- -->
+
+</p>
+<p>
+<label for="SeatingCapacity">SeatingCapacity</label>
+<input type="number" name="txtSeating_Capacity" id="txtSeating_Capacity">
+</p>
+<!-- -->
+<div style="color:red">
+<?php echo $errors['SeatingCapacity']?>
+</div>
+<!-- -->
+
+<!-- -->
+
+</p>
+<p>
+<label for="Mileage">Mileage</label>
+<input type="text" name="txtMileage" id="txtMileage">
+</p>
+<!-- -->
+<div style="color:red">
+<?php echo $errors['Mileage']?>
+</div>
+<!-- -->
+
+<!-- -->
+
+</p>
+<p>
+<label for="Insurance">Insurance</label>
+<input type="text" name="txtInsurance" id="txtInsurance">
+</p>
+<!-- -->
+<div style="color:red">
+<?php echo $errors['Insurance']?>
+</div>
+<!-- -->
+
+<!-- -->
+
+</p>
+<p>
+<label for="Transmission">Transmission</label>
+<input type="text" name="txtTransmission" id="txtTransmission">
+</p>
+<!-- -->
+<div style="color:red">
+<?php echo $errors['Transmission']?>
+</div>
+<!-- -->
+
+
+
+<p>&nbsp;</p>
+<p>
+<input type="submit" name="Submit" id="Submit" value="Submit">
+</p>
+</form>
+</fieldset>
+</body>
+</html>
+

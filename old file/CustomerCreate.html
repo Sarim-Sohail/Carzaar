@@ -1,0 +1,80 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Receipt Form</title>
+</head>
+
+<body>
+<fieldset>
+<legend>Customer Data Form</legend>
+<form name="DataForm" method="post" action="CustomerCreate.php">
+<p>
+<label for="FirstName">First Name</label>
+<input type="text" name="txtfName" id="txtfName">
+<!-- changed by hamza -->
+<div style="color:red">
+<?php session_start();echo $send['fname']?>
+</div> 
+<!-- --> 
+</p>
+<p>
+<label for="LastName">Last Name</label>
+<input type="text" name="txtlName" id="txtlName">
+<!-- -->
+<div style="color:red">
+<?php echo $errors['lname']?>
+</div>
+<!-- -->
+</p>
+<p>
+<label for="CNIC">CNIC</label>
+<!-- Changed by hamza (added Min,max in input And added one more box)-->
+<input style="width:50px" type="number" name="txtCNIC" id="txtCNIC" min="0" max="5"> - <input style="width:110px" type="number" name="txtCNIC" id="txtCNIC" min="0" max="8"> - <input style="width:40px" type="number" name="txtCNIC" id="txtCNIC" min="0" max="1">
+<!-- -->
+<div style="color:red">
+<?php echo $errors['nic']?>
+</div>
+<!-- -->
+</p>
+<label for="TotalPrice">Total Price</label>
+<input type="number" name="txtPrice" id="txtPrice">
+<!-- -->
+<div style="color:red">
+<?php echo $errors['price']?>
+</div>
+<!-- -->
+
+</p>
+<p>
+<label for="PurchaseDate">Date of Purchase</label>
+<input type="date" name="txtPD" id="txtPD">
+<!-- -->
+<div style="color:red">
+<?php echo $errors['pd']?>
+</div>
+<!-- -->
+
+</p>
+<p>
+<label for="VehicleID">Vehicle ID</label>
+<input type="number" name="txtvID" id="txtvID">
+</p>
+<!-- -->
+<div style="color:red">
+<?php echo $errors['vid']?>
+</div>
+<!-- -->
+
+<p>&nbsp;</p>
+<p>
+<input type="submit" name="Submit" id="Submit" value="Submit">
+</p>
+</form>
+</fieldset>
+</body>
+</html>
+
